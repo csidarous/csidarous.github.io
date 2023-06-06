@@ -1,4 +1,37 @@
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+const sections = document.querySelectorAll('.section');
+const sectBtns = document.querySelectorAll('.controlls');
+const sectBtn = document.querySelectorAll('.control');
+const allSections = document.querySelector('.main-content');
 
+function PageTransitions(){
+    //Button click active class
+    for(let i = 0; i < sectBtn.length; i++){
+        sectBtn[i].addEventListener('click', function(){
+            let currentBtn = document.querySelectorAll('.active-btn');
+            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
+            this.className += ' active-btn';
+        }) 
+    }
+    
+    //sections Active class
+    allSections.addEventListener('click', (e) =>{
+        const id = e.target.dataset.id;
+        if(id){
+            //remove selected from other buttons
+            sectBtns.forEach((btn) =>{
+                btn.classList.remove('active')
+            })
+            e.target.classList.add('active');
+
+            //hide other sections
+            sections.forEach((section)=> {
+                section.classList.remove('active')
+            })
+
+            const element = document.getElementById(id);
+            element.classList.add('active');
+        }  
+    })
+}
+
+PageTransitions();
