@@ -244,7 +244,7 @@ html, body {
 }
 
 .container {
-  min-height: 220vh; /* Set a maximum height for the container to ensure scrolling */
+  min-height: 250vh; /* Set a maximum height for the container to ensure scrolling */
   overflow-y: auto; /* Enable vertical scrolling when the content exceeds the container's height */
   /* Add other styles like padding, background, etc., based on your design */
 }
