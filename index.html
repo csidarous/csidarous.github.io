@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Chris Portfolio</title>
     
     <link rel = "stylesheet" href = "styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class = "main-content">
-    
+    <div class="container">
     <main>
         <header>
             <div class="header-content">
@@ -38,6 +41,7 @@
             </div>
         </header>
 
+       
         <section class = "section sec1 active" id = "home">
                 <h1> Home Page</h1>
                 <a href="mailto:sidarousca@gmail.com">
@@ -57,104 +61,143 @@
                     </svg>
                 </a>
                 <br><br>
-                <center><img src="/images/chris.JPG" style="width:400px;height:400px;"></center>
+                <center><img class= "portfolioimg" src="images/cathy.jpg" style="width:500px;height:500px;"></center>
                 <h3>Whats new with me?</h3>
                 <br>
                 <p style="margin-left: 100px;">
-                    <u> June 2023</u> &nbsp;&nbsp;&nbsp;&nbsp; Started Internship at Lavner Education
+                    <u> June 2023</u> &nbsp;&nbsp;&nbsp;&nbsp; Returned to Lavner Education as an IT Intern.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joined a startup developing API's and software for them.<br><br>
+                    <u> July 2023</u> &nbsp;&nbsp;&nbsp;&nbsp; Started watching videos on Data Science projects and am. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beginning to work on data visualizations and Dashboards <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using API's and web scraping.<br><br>
+                    <u> August 2023</u> &nbsp;&nbsp; Beginning to apply to Software Engineeirng Internships for summer 2024.
                 </p>
-
+                
         </section>
         <section class="section sec2 about " id= "about">
             <h1> About Me</h1>
             <br>
-            <p> My name is Christopher Sidarous and I am going into my Junior year at the University of 
-                Pittsburgh studying Computer Science and Data Science. I am currently interested in 
-                Entrprenaurship, Web development, Data Analysis and Algorithms & Data Structures. During
-                each semester since Fall of Sophmore year I have been Teaching Assistant for intro level
-                Computer Science courses. I have been involved in Enactus(an Entrprenaurship Club) 
-                and Coptic Orthodox Youth Association (COYA) where I am the Buisness Manager.
+            <p> My name is Christopher Sidarous, and I am going into my 
+                Junior year at the University of Pittsburgh, studying Computer Science
+                and Data Science. I am currently interested in Entrepreneurship, Web development, 
+                Data Analysis, and Algorithms & Data Structures. During each semester since 
+                Fall of Sophomore year, I have been a Teaching Assistant for intro level
+                Computer Science courses. I have been involved in Enactus (an Entrepreneurship Club) 
+                and Coptic Orthodox Youth Association (COYA), where I am the Business Manager.
                 <br><br>
                 During the past two summer I have worked at Lavner Education as an IT Intern teaching kids 
                 about different fields of technology. Please check out my various social media pages to
                 know more in depth about my experience so far. Thanks!
-
             </p>
+            <center><img class= "portfolioimg" src="images/chris.jpg" style="width:400px;height:400px;"></center>
         </section>
         <section class="section sec3 portfolio " id= "portfolio"> 
             <h1> Resume</h1>
-            <embed src="/images/Resume.pdf" type="application/pdf" width="100%" height="600px" />
+            <embed src="images/Resume.pdf" type="application/pdf" width="100%" height="600px" />
         </section>
         <section class="section sec4 projects " id= "projects"> 
             <h1> Projects</h1>
             <center>
-            <div class="info-box">
-                <div class="info-title">Pittsburghs Best Niegborhood</div>
-                <div class="info-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Mauris tempor, mauris ac dictum gravida, est dui commodo 
-                  lorem, a interdum leo sem et mauris.
+            <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Pittsburghs Best Neighborhood</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/pitt.JPG" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CMPINF 0010<br></div>
+                  <p>
+                    <span class="rounded-box">Python</span>
+                    <span class="rounded-box">Pandas</span> 
+                  </p>
+                </div>
+            </div>
+
+              <div class="responsive">
+                <div class="gallery">
+                    <center> <div class="info-title">Budget Application</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/bud.png" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">
+                    CS 1520
+                  </div>
+                  <span class="rounded-box">Python</span>
+                  <span class="rounded-box">SQLAlchemy</span>
+                  <span class="rounded-box">Java Script</span>
+                  <span class="rounded-box">HTML</span>
+                  <span class="rounded-box">React</span>
+                  <span class="rounded-box">JSON</span>
+                  <span class="rounded-box">Rest API's</span>     
+
                 </div>
               </div>
-            
-              <div class="info-box">
-                <div class="info-title">Budget Application</div>
-                <div class="info-content">
-                  Sed eget justo eleifend, elementum ex eu, efficitur nunc. 
-                  Nullam dictum, mauris eu egestas vulputate, velit velit 
-                  posuere elit, a ultrices ligula eros vel turpis.
-                </div>
-              </div>
-            
-              <div class="info-box">
-                <div class="info-title">Catering Company</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
+              
+              <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Catering Company</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/catering.png" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CS 1520<br></div>
                 </div>
               </div>
 
-              <div class="info-box">
-                <div class="info-title">Hosting and Managing Chat Rooms</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
+              <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Hosting/Managing Chat Rooms</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/chatweb.png" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CS 1520<br></div>
                 </div>
-              </div>
-              <div class="info-box">
-                <div class="info-title">Battleship</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Battleship</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/battleship.png" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CS 1520<br></div>
                 </div>
-              </div>
-              <div class="info-box">
-                <div class="info-title">CPU</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
-                </div>
-              </div>
-              <div class="info-box">
-                <div class="info-title">Assembly Language Game</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">CPU</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/pitt.JPG" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CS 447<br></div>
                 </div>
               </div>
 
-              <div class="info-box">
-                <div class="info-title">Custom Malloc</div>
-                <div class="info-content">
-                  Fusce facilisis risus a eros tristique, non lacinia lorem 
-                  efficitur. Duis in nisl ac ligula suscipit vestibulum.
+              <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Assembly Language Game</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/pitt.JPG" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CCS 447<br></div>
                 </div>
-              </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <center><div class="info-title">Custom Malloc</div></center>
+                  <a href="https://github.com/csidarous/Big-Ideas-Final-Project">
+                    <img src="images/pitt.JPG" alt="Github" width="800" height="600">
+                  </a>
+                  <div class="desc">CS 449<br></div>
+                </div>
+            </div>
+              
             </center>
+              
+            
         </section>
-        <section class="section sec5 interests " id= "interests" > 
-            <h1> Blog Posts</h1>
-        </section>
+        
           
        
         <div class = "controlls"> 
@@ -170,10 +213,9 @@
             <div class= "control control-4 " title ="Projects" data-id= "projects">
                 <i class="fa fa-paperclip"></i>
             </div>
-            <div class= "control control-5 " title ="Blog Posts" data-id= "interests">
-                <i class="fa fa-pen"></i>
-            </div>
+            
         </div>
+        
         
 
         <footer id="bottom">
@@ -195,10 +237,12 @@
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                     </svg>
                 </a>
+              
             </div>
         </footer>
-
+        
     </main>
     <script src = "js.js" ></script>
+    </div>
 </body>
 </html>

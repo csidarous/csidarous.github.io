@@ -7,16 +7,19 @@
 }
 
 :root {
-  --color-primary: white;
-  --color-black: black;
+  --color-header: rgb(0, 0, 0);
+  --color-text: rgb(206, 207, 227);
+  --color-background: #566d92;
+
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
 }
 
 body {
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
+  font-family: 'Crimson Text', serif;
   font-family: 'Poppins', sans-serif;
   font-size: 1.1 rem;
-  color: var(--color-black);
+  color: var(--color-text);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -33,7 +36,7 @@ a {
 header {
   height: 10vh;
   text-align: center;
-  background-color: var(--color-black);
+  background-color: var(--color-header);
   font-size: 25px;
   top: 0;
   z-index: 1; /* Set a higher z-index value */
@@ -108,8 +111,11 @@ section {
     transform: translateY(-50%);
     
 }
+
+
+
 .active-btn{
-    background-color: green !important;
+    background-color: rgb(6, 7, 6) !important;
     transition: all .4s ease-in-out;
 }
 i{
@@ -129,6 +135,7 @@ i{
       box-shadow: --box-shadow-1;
 }
 
+
 .control:hover{
   border: 1px solid #888;
   background-color: #ddd;
@@ -141,7 +148,7 @@ i{
 }
 
 footer {
-  background-color: rgb(30, 30, 30);
+  background-color: var(--color-header);
   padding: 20px;
   text-align: center;
   position: fixed;
@@ -175,10 +182,96 @@ footer {
 
 .info-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .info-content {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+div.gallery {
+  border: 15px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 8px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 12px;
+  float: left;
+  width: 35%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 100%;
+    margin: 12px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 220vh; /* Set a maximum height for the container to ensure scrolling */
+  overflow-y: auto; /* Enable vertical scrolling when the content exceeds the container's height */
+  /* Add other styles like padding, background, etc., based on your design */
+}
+
+
+.rcorners1 {
+  border-radius: 10px;
+  background: #73AD21;
+  padding: 20px; 
+  background-position: center middle;
+  width: 80px;
+  height: 5px;  
+}
+
+.rounded-box {
+  display: inline-block;
+  padding: 4px 8px; /* Adjust padding as needed */
+  background-color: rgb(157, 61, 48); /* Background color of the box */
+  border-radius: 10px; /* Adjust the radius to control the roundness */
+}
+
+
+.post {
+  margin-bottom: 2rem;
+}
+
+
+.portfolioimg {
+  border-radius: 50%;
 }
